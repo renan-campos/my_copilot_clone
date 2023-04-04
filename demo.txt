@@ -1,0 +1,54 @@
+[rcampos@rh-laptop nlp]$ python my_copilot_clone.py List all python files
+
+Command: 
+
+```
+ls *.py
+```
+
+Parameters breakdown:
+- `ls`: stands for "list", is the command to list files and directories
+- `*.py`: is a wildcard pattern that matches all files with `.py` extension, in other words, it selects all Python files
+
+[rcampos@rh-laptop nlp]$ python my_copilot_clone.py echo purple with a white background
+
+Command: `echo -e "\e[47m\e[35m purple \e[0m"`
+
+Parameters:
+- `-e`: enables escape character interpretation
+- `"\e[47m"`: sets the background color to white
+- `"\e[35m"`: sets the text color to purple
+- `" purple "`: the text to be displayed with the specified colors
+- `"\e[0m"`: resets the color to default after the text is displayed
+
+[rcampos@rh-laptop nlp]$ python my_copilot_clone.py alias a command to '??'
+
+Command: alias
+
+Parameters:
+- The name of the alias to create (e.g. "a")
+- The command or commands to alias (e.g. "ls -l")
+
+[rcampos@rh-laptop nlp]$ alias ?? "python my_copilot_clone.py"
+bash: alias: ??: not found
+bash: alias: python my_copilot_clone.py: not found
+[rcampos@rh-laptop nlp]$ python my_copilot_clone.py alias python to foobar
+
+Command: 
+
+```
+alias python=foobar
+```
+
+- `alias`: keyword used to create an alias
+- `python`: the original command or keyword to be replaced by the alias
+- `foobar`: the new command or keyword to replace the original command or keyword
+
+[rcampos@rh-laptop nlp]$ alias ??="python my_copilot_clone.py"
+[rcampos@rh-laptop nlp]$ ?? gh? list all closed PRs
+
+Command: `gh pr list -S closed`
+
+Parameters: 
+- `pr list`: command to list pull requests.
+- `-S`: (or `--state`) flag to filter by state. Here, it is set to `closed` to list all closed pull requests.
